@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJobs - Job Search for Developers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#logo" id="logo">DevJobs</a>
+        </div>
+    </header>
+    <section class="search">
+        <div class="search-container">
+            <div class="input-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-jobs" name="search-jobs" placeholder="Search by title">
+            </div>
+            <div class="btn-container">
+                <span>Find Job</span>
+            </div>
+        </div>
+    </section>
+    <main class="jobs-list">
+        <p>Showing <span id="job-number"></span> Jobs</p>
+        <div class="jobs-container">
+            <!-- <div class="job-title">
+                <div class="top">
+                    <img src="https://photos.angel.co/startups/i/32458-e5df285fd64c4aeb80c97da5f0e96024-medium_jpg.jpg?buster=1491002934" alt="">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="job-role">
+                    <span>Senior Software Engineer</span>
+                </div>
+                <div class="job-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam animi odit recusandae quia voluptatum necessitatibus quam hic delectus, velit sed ipsa tempora corrupti accusamus officia unde eligendi, sit quisquam reprehenderit!
+                </div>
+                <div class="job-btn-container">
+                    <div class="job-btn apply-now">
+                        Apply Now
+                    </div>
+                    <div class="job-btn">
+                        Message
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    <template id="job-title-template">
+        <div class="job-title">
+            <div class="top">
+                <img src="" alt="">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div class="job-role">
+                <span></span>
+            </div>
+            <div class="job-description">
+                <span></span>
+            </div>
+            <div class="job-btn-container">
+                <div class="job-btn apply-now">
+                    Apply Now
+                </div>
+                <div class="job-btn">
+                    Message
+                </div>
+            </div>
+        </div>
+    </template>
+</body>
+</html>
