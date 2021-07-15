@@ -46,30 +46,29 @@ function searchJobs(jobs, searchText) {
 }
 
 function showJobs(jobs) {
-  // const jobsContainer = document.querySelector(".jobs-container")
   let jobsHTML = ""
   jobs.forEach((job) => {
     jobsHTML += `
-      <div class="job-title">
-          <div class="top">
-              <img src="${job.logo}" alt="">
-              <i class="fas fa-ellipsis-h"></i>
-          </div>
-          <div class="job-role">
-              <span>${job.roleName}</span>
-          </div>
-          <div class="job-description">
-              <span>${job.requirements.content}</span>
-          </div>
-          <div class="job-btn-container">
-              <div class="job-btn apply-now">
-                  Apply Now
-              </div>
-              <div class="job-btn">
-                  Message
-              </div>
-          </div>
-      </div>
+        <div class="job-title">
+            <div class="top">
+                <img src="${job.logo}" alt="">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div class="job-role">
+                <span>${job.roleName}</span>
+            </div>
+            <div class="job-description">
+                <span>${job.requirements.content}</span>
+            </div>
+            <div class="job-btn-container">
+                <div class="job-btn apply-now">
+                    Apply Now
+                </div>
+                <div class="job-btn">
+                    Message
+                </div>
+            </div>
+        </div>
     `
   })
   container.innerHTML = jobsHTML

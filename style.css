@@ -5,6 +5,7 @@
 }
 
 body {
+    width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     background-color: #11121A;
@@ -29,10 +30,6 @@ header {
     color: #fff;
     text-decoration: none;
     outline: none;
-}
-
-#logo:hover {
-    text-decoration: underline;
 }
 
 /* Search Section */
@@ -196,4 +193,22 @@ header {
 
 .apply-now:hover {
     background-color: hsl(226, 100%, 62%);
+}
+
+@media screen and (max-width: 930px) {
+    .jobs-list {
+        width: 100vw;
+    }
+    .jobs-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .jobs-list {
+        width: 100vw;
+    }
+    .jobs-container {
+        grid-template-columns: 1fr;
+    }
 }
